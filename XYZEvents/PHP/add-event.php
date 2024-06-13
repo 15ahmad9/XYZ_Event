@@ -33,6 +33,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
+            background: url(../img/wall.jpg) no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
             /* background-color: #f8f8f8;
             display: flex;
             justify-content: center;
@@ -41,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         .boody{
-            background-color: #f8f8f8;
+            /* background-color: #f8f8f8; */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -55,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             padding: 40px;
             width: 400px;
             max-width: 90%;
-            
+            margin-top: auto;
         }
 
         .form-container h2 {

@@ -30,11 +30,34 @@ while ($row = mysqli_fetch_assoc($eventRecord_result)) {
     <title>Event History</title>
     <link rel="stylesheet" href="../CSS/style.css" />
     <style>
-        /* Your CSS styles here */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url(../img/wall.jpg) no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            /* background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; */
+        }
+
+        .boody{
+            /* background-color: #f8f8f8; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
         table {
             width: 85%;
             border-collapse: collapse;
             margin: 0 auto;
+            background-color: white;
         }
 
         th,

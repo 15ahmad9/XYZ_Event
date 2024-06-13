@@ -51,13 +51,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Event</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8;
+            background: url(../img/wall.jpg) no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            /* background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; */
+        }
+
+        .boody{
+            /* background-color: #f8f8f8; */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -71,6 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             padding: 40px;
             width: 400px;
             max-width: 90%;
+            margin-top: auto;
         }
 
         .form-container h2 {
@@ -120,9 +135,48 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         .submit-btn:hover {
             background-color: #2980b9;
         }
+
+        header {
+                background-color: #0c0234;
+                color: #fff;
+                padding: 20px 0;
+            }
+
+            .containerh {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+                display: flex;
+                justify-content: space-between;
+    align-items: center;
+            }
+
+            .form-container button{
+            background-color: #0c0234;
+        }
+
+        .form-container button:hover {
+            background-color: #0c0234db;
+        }
+
     </style>
 </head>
+<header>
+            <div class="containerh">
+                <h1>XYZ Events</h1>
+                <nav>
+                    <ul>
+                        <li><a href="../PHP/homepage.php">Home</a></li>
+                        <!-- <li><a href="#about">About</a></li> -->
+                        <!-- <li><a href="../PHP/event-booking.php">Event Booking</a></li> -->
+                        <!-- <li><a href="#contact">Contact</a></li> -->
+                        <!-- <li><a href="../PHP/index.php">Logout</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+        </header>
 <body>
+<div class="boody">
     <div class="form-container">
         <h2>Update Event</h2>
         <form action="update-event.php" method="POST">
@@ -156,7 +210,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <button type="submit" class="submit-btn">Submit</button>
         </form>
-    </div>
+    </div></div>
 </body>
 </html>
 
